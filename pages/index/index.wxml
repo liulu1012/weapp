@@ -1,0 +1,23 @@
+<view>
+  <swiper indicator-dots="true"
+  autoplay="true" interval="5000" duration="1000" style="height:{{750*9/16}}rpx">
+    <swiper-item>
+      <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1503912571&di=b0f94b173d573ee337f847fa5dd12043&imgtype=jpg&er=1&src=http%3A%2F%2Fimg4.duitang.com%2Fuploads%2Fitem%2F201511%2F19%2F20151119124042_cHjzn.jpeg" mode="widthFix" style="width:750rpx"/>
+    </swiper-item>
+    <swiper-item>
+      <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1503317954454&di=f106d672274af4577eaec3600d66bb46&imgtype=0&src=http%3A%2F%2Fpic1.win4000.com%2Fwallpaper%2Fa%2F577f6bffd07ae.jpg" mode="widthFix" style="width:750rpx"/>
+    </swiper-item>
+    <swiper-item>
+      <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1503317958309&di=5f044392156cf41cea5652e7b15ec23e&imgtype=jpg&src=http%3A%2F%2Fimg0.imgtn.bdimg.com%2Fit%2Fu%3D3045055935%2C2789897587%26fm%3D214%26gp%3D0.jpg" mode="widthFix" style="width:750rpx"/>
+    </swiper-item>
+</swiper>
+</view>
+<text class="label">合作的商家</text>
+<view class="courses">
+  <view wx:for="{{courses}}" wx:key="id">
+    <navigator url="../course/course?link={{item.link}}"  class="course">
+      <image src="{{item.cover}}" mode="widthFix" style="width: 682rpx" />
+      <text class="title">{{item.title}}</text>
+    </navigator>
+  </view>
+</view>

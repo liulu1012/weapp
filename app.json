@@ -1,0 +1,13 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/login/login",
+    "pages/course/course"
+  ],
+  "window":{
+    "navigationBarBackgroundColor": "#00bcd4",
+    "navigationBarTitleText": "亿谷网络公司",
+    "navigationBarTextStyle":"white"
+  }
+}
