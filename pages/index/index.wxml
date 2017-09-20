@@ -12,12 +12,45 @@
     </swiper-item>
 </swiper>
 </view>
-<text class="label">合作的商家</text>
-<view class="courses">
-  <view wx:for="{{courses}}" wx:key="id">
-    <navigator url="../course/course?link={{item.link}}"  class="course">
-      <image src="{{item.cover}}" mode="widthFix" style="width: 682rpx" />
-      <text class="title">{{item.title}}</text>
-    </navigator>
+<view class='bigBag'>
+  <view class='smallBag'>
+    <text class="label">合作的商家</text>
+    <view class="courses">
+      <view wx:for="{{courses}}" wx:key="id">
+        <navigator url="../course/course?link={{item.link}}">
+          <view class="course">
+            <image src="{{item.cover}}" class='shop' />
+            <text class="title">{{item.title}}</text>     
+          </view>
+        </navigator>
+        <navigator url="../course/course?link={{item.link}}">
+          <view class="course">
+            <image src="{{item.cover}}" class='shop' />
+            <text class="title">{{item.title}}</text>     
+          </view>
+        </navigator>
+      </view>
+    </view>
+  </view>
+  <view class='smallBag'>
+    <text class="label">我们的优势</text>
+    <view class='showPic'>
+      <image src='http://owk5g1xkt.bkt.clouddn.com/timg%20%282%29.jpg' class='smallPic'/>
+      <image src='http://owk5g1xkt.bkt.clouddn.com/12810.png' class='smallPic'/>
+    </view>
+    <image src='http://owk5g1xkt.bkt.clouddn.com/banner_tuiguang.jpg' class='bigPic'/> 
+  </view>
+  <view class='smallBag'>
+    <text class="label">个人/企业定制</text>
+    <image src='http://owk5g1xkt.bkt.clouddn.com/timg%20%289%29.jpg' class='bigPic'/>
   </view>
 </view>
+
+
+<view class='nav-wrap'>
+  <view class='nav'>首页</view>
+  <view class='nav'>定制</view>
+  <view class='nav'>我们</view>
+</view>
+
+
